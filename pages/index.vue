@@ -1,37 +1,23 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        study-nuxt-middleware
-      </h1>
-      <h2 class="subtitle">
-        My legendary Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+  <div>
+    <h2>index page</h2>
+    <ul>
+      <li>
+        <nuxt-link to="/login">
+          ログインページへ
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/authed-route">
+          認証が必要なページ
+        </nuxt-link>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
+export default {}
 </script>
 
 <style>
